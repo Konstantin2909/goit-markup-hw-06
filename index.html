@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-03</title>
+    <title>goit-markup-hw-06</title>
     <!-- Normalize run -->
     <link
       rel="stylesheet"
@@ -25,18 +25,64 @@
       <div class="modal">
         <button data-modal-close class="modal-buton">
           <svg class="modal-icon">
-            <use href="./images/icons.svg#close"></use>
+            <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor
-          magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa.
-          Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris
-          pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare
-          arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse
-          platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
-        </p>
+        
+        <form class="register-form">
+          <strong class="register-form-title">Оставьте свои данные, мы вам перезвоним</strong>
+
+          <div class="register-form-group" role="group">
+
+            <label class="register-form-wrap">
+              <span class="register-form-label">Имя</span>
+              <input class="register-form-input" type="text">
+              <svg class="register-form-icon">
+                <use href="./images/icons.svg#person" width="18" heigt="18"></use>
+              </svg>
+            </label>
+          
+            <label class="register-form-wrap">
+              <span class="register-form-label">Телефон</span>
+              <input class="register-form-input" type="text">
+              <svg class="register-form-icon">
+                <use href="./images/icons.svg#phone-black" width="18" heigt="18"></use>
+              </svg>
+            </label>
+          
+            <label class="register-form-wrap">
+              <span class="register-form-label">Почта</span>
+              <input class="register-form-input" type="text">
+              <svg class="register-form-icon">
+                <use href="./images/icons.svg#email-black" width="18" heigt="18"></use>
+              </svg>
+            </label>
+          
+            <label class="register-form-wrap">
+              <span class="register-form-label">Комментарий</span>
+              <textarea class="register-form-input-coment">
+              </textarea>
+            </label>
+
+          </div>
+
+          <label class="register-form-agreement">
+            <input class="" type="checkbox" name="agreement">
+            <svg width="18" heigt="18">
+              <use href="./images/icons.svg#check"></use>
+              <use href="./images/icons.svg#cub"></use>
+              </svg>
+              <span class="register-form-agreement-text">
+              Соглашаюсь c рассылкой и принимаю
+              <a class="register-form-agreement-link" href=""> Условия договора</span>
+          </label>
+
+          <button class="register-form-btn">
+            <span>Отправить</span>
+          </button>
+          
+        </form>
+
       </div>
     </div>
 
@@ -425,6 +471,9 @@
               </address>
             </div>
           </div>
+
+          <!-- Присоединяйтесь -->
+
           <div>
             <p class="footer-text-three">ПРИСОЕДИНЯЙТЕСЬ</p>
             <ul class="social-flx">
@@ -458,6 +507,23 @@
               </li>
             </ul>
           </div>
+
+          <!-- Подпишитесь на рассылку -->
+
+          <div>
+            <p class="footer-text-three">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+            <div class="footer-form-group"> 
+              <label class="footer-form-label" for="user-mail"></label>
+              <input class="footer-form-imput" type="email" placeholder="E-mail">
+              <button class="footer-form-btn">
+                <span>Подписаться</span>
+                <svg class="telegram-icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#telegram"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
         </div>
       </div>
     </footer>
