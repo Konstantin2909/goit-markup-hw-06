@@ -22,6 +22,7 @@
   <body>
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
+
       <div class="modal">
         <button data-modal-close class="modal-buton">
           <svg class="modal-icon">
@@ -34,47 +35,46 @@
 
           <div class="register-form-group" role="group">
 
-            <label class="register-form-wrap">
-              <span class="register-form-label">Имя</span>
-              <input class="register-form-input" type="text">
+            <label class="register-form-label">
+              <span class="register-form-span">Имя</span>
               <svg class="register-form-icon">
-                <use href="./images/icons.svg#person" width="18" heigt="18"></use>
+                <use href="./images/icons.svg#person-black"></use>
               </svg>
+              <input class="register-form-input" type="text">
             </label>
           
-            <label class="register-form-wrap">
-              <span class="register-form-label">Телефон</span>
-              <input class="register-form-input" type="text">
+            <label class="register-form-label"> 
+              <span class="register-form-span">Телефон</span>
               <svg class="register-form-icon">
-                <use href="./images/icons.svg#phone-black" width="18" heigt="18"></use>
+                <use href="./images/icons.svg#phone-black"></use>
               </svg>
+              <input class="register-form-input" type="text">
             </label>
           
-            <label class="register-form-wrap">
-              <span class="register-form-label">Почта</span>
-              <input class="register-form-input" type="text">
+            <label class="register-form-label"> 
+              <span class="register-form-span">Почта</span>
               <svg class="register-form-icon">
-                <use href="./images/icons.svg#email-black" width="18" heigt="18"></use>
-              </svg>
+                <use href="./images/icons.svg#email-black"></use>
+              </svg> 
+              <input class="register-form-input" type="text">
             </label>
           
-            <label class="register-form-wrap">
-              <span class="register-form-label">Комментарий</span>
-              <textarea class="register-form-input-coment">
-              </textarea>
+            <label class="register-form-label">
+              <span class="register-form-span">Комментарий</span>
+              <textarea class="register-form-comment" placeholder="Введите текст"></textarea>
             </label>
 
           </div>
 
           <label class="register-form-agreement">
-            <input class="" type="checkbox" name="agreement">
-            <svg width="18" heigt="18">
-              <use href="./images/icons.svg#check"></use>
-              <use href="./images/icons.svg#cub"></use>
+            <input class="register-checkbox visuaaly-hidden" type="checkbox" name="agreement">
+            <svg class="register-form-agreement-icon">
+              <use class="register-form-agreement-check-icon" href="./images/icons.svg#check"></use>
+              <use class="register-form-agreement-uncheck-icon" href="./images/icons.svg#uncheck"></use>
               </svg>
               <span class="register-form-agreement-text">
-              Соглашаюсь c рассылкой и принимаю
-              <a class="register-form-agreement-link" href=""> Условия договора</span>
+                Соглашаюсь c рассылкой и принимаю 
+              <a class="register-form-agreement-link" href="">Условия договора</a></span>
           </label>
 
           <button class="register-form-btn">
@@ -93,9 +93,7 @@
         <div class="header-box">
           <div class="header-box-1">
             <nav class="header-flx-block">
-              <p class="header-logo">
-                <span class="logo-blue">Web</span><span class="logo-black">Studio</span>
-              </p>
+              <p class="header-logo">Web<span class="logo-black">Studio</span></p>
               <ul class="header-flx-block-one">
                 <li>
                   <a class="header-text-1 uniform-link link uniform-link-current" href="index.html"
@@ -451,10 +449,7 @@
       <div class="container">
         <div class="footer-flx">
           <div>
-            <p class="footer-logo">
-              <span class="logo-blue"> Web</span>
-              <span class="logo-white">Studio</span>
-            </p>
+            <p class="footer-logo">Web<span class="logo-white">Studio</span></p>
             <div class="address">
               <address>
                 <p class="footer-text-one">г. Киев, пр-т Леси Украинки, 26</p>
@@ -513,7 +508,7 @@
           <div>
             <p class="footer-text-three">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
             <div class="footer-form-group"> 
-              <label class="footer-form-label" for="user-mail"></label>
+              <label class="footer-form-label"></label>
               <input class="footer-form-imput" type="email" placeholder="E-mail">
               <button class="footer-form-btn">
                 <span>Подписаться</span>
